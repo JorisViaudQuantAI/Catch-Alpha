@@ -1,0 +1,33 @@
+{
+  "n_pairs": 128,
+  "n_stable": 69,
+  "n_stable_negative": 37,
+  "n_stable_positive": 32,
+  "stable_momentum_pairs": [
+    {
+      "signal": "momentum_24h",
+      "horizon_h": 1,
+      "mean_rank_ic": -0.03199104697762639
+    },
+    {
+      "signal": "momentum_24h",
+      "horizon_h": 8,
+      "mean_rank_ic": -0.022308704458983062
+    },
+    {
+      "signal": "momentum_72h",
+      "horizon_h": 1,
+      "mean_rank_ic": -0.016852206357349374
+    },
+    {
+      "signal": "momentum_168h",
+      "horizon_h": 1,
+      "mean_rank_ic": -0.011595667895200624
+    },
+    {
+      "signal": "momentum_336h",
+      "horizon_h": 1,
+      "mean_rank_ic": -0.00806273854475057
+    }
+  ]
+}

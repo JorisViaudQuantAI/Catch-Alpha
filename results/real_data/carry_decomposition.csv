@@ -1,0 +1,16 @@
+# figure: F4 (carry economics decomposition)
+# source: catch_alpha.realdata.study.carry_decomposition (scripts/real_data_strategies.py)
+# panel_a: raw funding carry, per-fold funding-leg sum (positive every fold).
+# panel_b: cash-and-carry three-way decomposition; net = funding + basis + cost.
+# component_kind: funding|basis|cost|net ; value in book PnL units over train+valid.
+panel,fold,component_kind,label,value
+panel_a,0,funding,fold 0,0.122510
+panel_a,1,funding,fold 1,0.370145
+panel_a,2,funding,fold 2,0.106809
+panel_a,3,funding,fold 3,0.122670
+panel_a,4,funding,fold 4,0.076317
+panel_a,5,funding,fold 5,0.080248
+panel_b,all,funding,funding income,0.491410
+panel_b,all,basis,basis drift,-0.023196
+panel_b,all,cost,double-leg cost (5 bps/leg),-0.731686
+panel_b,all,net,net,-0.263472

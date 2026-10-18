@@ -1,0 +1,765 @@
+{
+  "window": {
+    "start": "2019-09-08T18:00:00+00:00",
+    "end": "2024-12-31T23:00:00+00:00"
+  },
+  "power_gate": {
+    "status": "insufficient_data",
+    "n_obs": 46590,
+    "n_required": 54160,
+    "periods_per_year": 8760.0,
+    "s_min_annual": 1.0,
+    "horizon_bars": 1,
+    "variance_inflation_factor": 1.0
+  },
+  "strategies": {
+    "raw_carry": {
+      "n_returns": 46590,
+      "full_window": {
+        "price": -0.09395303758789122,
+        "funding": 0.9010062701480848,
+        "cost": -1.3586666666666667,
+        "total": -0.5516134341064729
+      },
+      "full_window_power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "n_folds_ci_lb_gt_zero": 0,
+      "n_folds_funding_positive": 6,
+      "folds": [
+        {
+          "fold": 0,
+          "n_obs": 7597,
+          "start": 168,
+          "end": 7765,
+          "mean_return_ci_95": [
+            -7.305238633392258e-05,
+            8.218830671478175e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.0006665571467326381,
+          "sum_funding": 0.12251008955823767,
+          "sum_cost": -0.09541666666666666,
+          "sum_total": 0.02775998003830371,
+          "funding_share": 0.994588607787569,
+          "turnover_mean": 0.025119564740467726,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 0.09776464165408505
+        },
+        {
+          "fold": 1,
+          "n_obs": 7597,
+          "start": 7933,
+          "end": 15530,
+          "mean_return_ci_95": [
+            -0.00015087223999939078,
+            0.0001668619840721828
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.02380200686625422,
+          "sum_funding": 0.3701450446964761,
+          "sum_cost": -0.19741666666666666,
+          "sum_total": 0.14892637116355503,
+          "funding_share": 0.9395806954974402,
+          "turnover_mean": 0.05197226975560528,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 0.27887096535124545
+        },
+        {
+          "fold": 2,
+          "n_obs": 7597,
+          "start": 15698,
+          "end": 23295,
+          "mean_return_ci_95": [
+            -8.706698715390481e-05,
+            0.00010042700626559973
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.1935269929550384,
+          "sum_funding": 0.10680885606740274,
+          "sum_cost": -0.22708333333333333,
+          "sum_total": 0.07325251568910779,
+          "funding_share": 0.3556313920401223,
+          "turnover_mean": 0.05978237023386424,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 0.20994968283933696
+        },
+        {
+          "fold": 3,
+          "n_obs": 7597,
+          "start": 23463,
+          "end": 31060,
+          "mean_return_ci_95": [
+            -7.844412901279629e-05,
+            6.275915576465364e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.07896223139656733,
+          "sum_funding": 0.12266994439502632,
+          "sum_cost": -0.2805833333333333,
+          "sum_total": -0.07895115754173974,
+          "funding_share": 0.6083847675274683,
+          "turnover_mean": 0.07386687727611776,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -0.2961925016209525
+        },
+        {
+          "fold": 4,
+          "n_obs": 7597,
+          "start": 31228,
+          "end": 38825,
+          "mean_return_ci_95": [
+            -0.00010520774984687116,
+            1.7418096608173896e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.17963246430702803,
+          "sum_funding": 0.0763174192931378,
+          "sum_cost": -0.2540833333333333,
+          "sum_total": -0.3573983783472235,
+          "funding_share": 0.2981732916603223,
+          "turnover_mean": 0.06689043920845947,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -1.4772194567885102
+        },
+        {
+          "fold": 5,
+          "n_obs": 7597,
+          "start": 38993,
+          "end": 46590,
+          "mean_return_ci_95": [
+            -0.0001262538024233522,
+            4.054076109907089e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.13839120544816913,
+          "sum_funding": 0.08024796786030106,
+          "sum_cost": -0.27891666666666665,
+          "sum_total": -0.3370599042545346,
+          "funding_share": 0.3670338057264883,
+          "turnover_mean": 0.07342810758632792,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -1.1434543447722525
+        }
+      ]
+    },
+    "hedged_carry": {
+      "n_returns": 46590,
+      "full_window": {
+        "price": 1.133516108708814,
+        "funding": 0.9010062701480848,
+        "cost": -1.3587815773518788,
+        "total": 0.6757408015050193
+      },
+      "full_window_power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "n_folds_ci_lb_gt_zero": 0,
+      "n_folds_funding_positive": 6,
+      "folds": [
+        {
+          "fold": 0,
+          "n_obs": 7597,
+          "start": 168,
+          "end": 7765,
+          "mean_return_ci_95": [
+            -3.634889609521001e-05,
+            7.589368168651384e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.11931834691644694,
+          "sum_funding": 0.12251008955823767,
+          "sum_cost": -0.09541666666666666,
+          "sum_total": 0.14641176980801796,
+          "funding_share": 0.5065991880200674,
+          "turnover_mean": 0.025119564740467726,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 0.5913943751073636
+        },
+        {
+          "fold": 1,
+          "n_obs": 7597,
+          "start": 7933,
+          "end": 15530,
+          "mean_return_ci_95": [
+            -5.129167748884803e-06,
+            0.00022269388056852556
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.6724143460759873,
+          "sum_funding": 0.3701450446964761,
+          "sum_cost": -0.19741666666666666,
+          "sum_total": 0.8451427241057967,
+          "funding_share": 0.3550349725613469,
+          "turnover_mean": 0.05197226975560528,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 1.9900326767718959
+        },
+        {
+          "fold": 2,
+          "n_obs": 7597,
+          "start": 15698,
+          "end": 23295,
+          "mean_return_ci_95": [
+            -5.437317204903003e-05,
+            9.824983808111308e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.3288250770531316,
+          "sum_funding": 0.10680885606740274,
+          "sum_cost": -0.22708333333333333,
+          "sum_total": 0.20855059978720097,
+          "funding_share": 0.24518029461642077,
+          "turnover_mean": 0.05978237023386424,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 0.7777964041474271
+        },
+        {
+          "fold": 3,
+          "n_obs": 7597,
+          "start": 23463,
+          "end": 31060,
+          "mean_return_ci_95": [
+            -8.6620191391604e-05,
+            8.404118364891635e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.10443313185179506,
+          "sum_funding": 0.12266994439502632,
+          "sum_cost": -0.2805833333333333,
+          "sum_total": -0.053480257086511926,
+          "funding_share": 0.5401509588611011,
+          "turnover_mean": 0.07386687727611776,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -0.175291118345686
+        },
+        {
+          "fold": 4,
+          "n_obs": 7597,
+          "start": 31228,
+          "end": 38825,
+          "mean_return_ci_95": [
+            -7.321768365575413e-05,
+            1.910668849219561e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.04664255344585708,
+          "sum_funding": 0.0763174192931378,
+          "sum_cost": -0.2540833333333333,
+          "sum_total": -0.2244084674860526,
+          "funding_share": 0.620668804596562,
+          "turnover_mean": 0.06689043920845947,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -1.2372097083662092
+        },
+        {
+          "fold": 5,
+          "n_obs": 7597,
+          "start": 38993,
+          "end": 46590,
+          "mean_return_ci_95": [
+            -8.860192694653968e-05,
+            3.292482067894435e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.032328116141381216,
+          "sum_funding": 0.08024796786030106,
+          "sum_cost": -0.27891666666666665,
+          "sum_total": -0.16634058266498442,
+          "funding_share": 0.7128331791955197,
+          "turnover_mean": 0.07342810758632792,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -0.7784330009843886
+        }
+      ],
+      "hedge_beta": -0.22982137042436412,
+      "beta_fit_returns": 37806,
+      "funding_share": 0.442858864326829,
+      "funding_share_requirement": 0.6
+    },
+    "reversal_24h": {
+      "n_returns": 46590,
+      "full_window": {
+        "price": -1.4471740593183098,
+        "funding": 0.0,
+        "cost": -1.3338333333333332,
+        "total": -2.781007392651643
+      },
+      "full_window_power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "n_folds_ci_lb_gt_zero": 0,
+      "n_folds_funding_positive": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "n_obs": 7597,
+          "start": 168,
+          "end": 7765,
+          "mean_return_ci_95": [
+            -9.44897835527546e-05,
+            -1.117760756009603e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.2718380248225406,
+          "sum_funding": 0.0,
+          "sum_cost": -0.12883333333333333,
+          "sum_total": -0.40067135815587396,
+          "funding_share": 0.0,
+          "turnover_mean": 0.0339168970207538,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -2.417078252498356
+        },
+        {
+          "fold": 1,
+          "n_obs": 7597,
+          "start": 7933,
+          "end": 15530,
+          "mean_return_ci_95": [
+            -0.0001843429811229838,
+            7.296753634301256e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.11613821555804299,
+          "sum_funding": 0.0,
+          "sum_cost": -0.23766666666666666,
+          "sum_total": -0.35380488222470974,
+          "funding_share": 0.0,
+          "turnover_mean": 0.06256855776402967,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -0.7109034481580928
+        },
+        {
+          "fold": 2,
+          "n_obs": 7597,
+          "start": 15698,
+          "end": 23295,
+          "mean_return_ci_95": [
+            -0.00014622462111141003,
+            -2.271971220206311e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.41224680802017294,
+          "sum_funding": 0.0,
+          "sum_cost": -0.23199999999999998,
+          "sum_total": -0.6442468080201729,
+          "funding_share": 0.0,
+          "turnover_mean": 0.06107674081874424,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -2.547451476768179
+        },
+        {
+          "fold": 3,
+          "n_obs": 7597,
+          "start": 23463,
+          "end": 31060,
+          "mean_return_ci_95": [
+            -0.00013183222156286627,
+            -1.3604814047159109e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.3069617057046032,
+          "sum_funding": 0.0,
+          "sum_cost": -0.23916666666666667,
+          "sum_total": -0.5461283723712699,
+          "funding_share": 0.0,
+          "turnover_mean": 0.0629634504848405,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -2.352837354142283
+        },
+        {
+          "fold": 4,
+          "n_obs": 7597,
+          "start": 31228,
+          "end": 38825,
+          "mean_return_ci_95": [
+            -7.363402231578257e-05,
+            1.7340976651527965e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.027104188521902883,
+          "sum_funding": 0.0,
+          "sum_cost": -0.24016666666666667,
+          "sum_total": -0.21306247814476378,
+          "funding_share": 0.0,
+          "turnover_mean": 0.0632267122987144,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -1.1191565506101289
+        },
+        {
+          "fold": 5,
+          "n_obs": 7597,
+          "start": 38993,
+          "end": 46590,
+          "mean_return_ci_95": [
+            -0.00016008890315707342,
+            -2.34538133357907e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.4014262947573768,
+          "sum_funding": 0.0,
+          "sum_cost": -0.23149999999999998,
+          "sum_total": -0.6329262947573767,
+          "funding_share": 0.0,
+          "turnover_mean": 0.060945109911807294,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -2.7509499953110272
+        }
+      ],
+      "gross_price_pnl": -1.4471740593183098,
+      "mirror_trend_gross_price_pnl": 1.4471740593183098
+    },
+    "reversal_8h": {
+      "n_returns": 46590,
+      "full_window": {
+        "price": -3.0224773502890168,
+        "funding": 0.0,
+        "cost": -2.3556666666666666,
+        "total": -5.378144016955684
+      },
+      "full_window_power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "n_folds_ci_lb_gt_zero": 0,
+      "n_folds_funding_positive": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "n_obs": 7597,
+          "start": 168,
+          "end": 7765,
+          "mean_return_ci_95": [
+            -0.00011765064537087034,
+            -2.9359559580431137e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.31115487321769064,
+          "sum_funding": 0.0,
+          "sum_cost": -0.2345,
+          "sum_total": -0.5456548732176907,
+          "funding_share": 0.0,
+          "turnover_mean": 0.06173489535342898,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -3.1494860480735483
+        },
+        {
+          "fold": 1,
+          "n_obs": 7597,
+          "start": 7933,
+          "end": 15530,
+          "mean_return_ci_95": [
+            -0.0004045161882458124,
+            -8.718657417385751e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -1.3953061917641267,
+          "sum_funding": 0.0,
+          "sum_cost": -0.41116666666666657,
+          "sum_total": -1.8064728584307934,
+          "funding_share": 0.0,
+          "turnover_mean": 0.10824448247115089,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -3.4709546786271726
+        },
+        {
+          "fold": 2,
+          "n_obs": 7597,
+          "start": 15698,
+          "end": 23295,
+          "mean_return_ci_95": [
+            -0.000160233556504124,
+            -2.360991544713427e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.2840674069469297,
+          "sum_funding": 0.0,
+          "sum_cost": -0.42,
+          "sum_total": -0.7040674069469298,
+          "funding_share": 0.0,
+          "turnover_mean": 0.11056996182703699,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -2.7049597897145796
+        },
+        {
+          "fold": 3,
+          "n_obs": 7597,
+          "start": 23463,
+          "end": 31060,
+          "mean_return_ci_95": [
+            -0.00016065465908131487,
+            -3.9647967847880665e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.31349942752920035,
+          "sum_funding": 0.0,
+          "sum_cost": -0.4181666666666666,
+          "sum_total": -0.731666094195867,
+          "funding_share": 0.0,
+          "turnover_mean": 0.11008731516826817,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -3.124469309105757
+        },
+        {
+          "fold": 4,
+          "n_obs": 7597,
+          "start": 31228,
+          "end": 38825,
+          "mean_return_ci_95": [
+            -0.00015973872690607673,
+            -4.817132896150975e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.3895276084608901,
+          "sum_funding": 0.0,
+          "sum_cost": -0.4183333333333333,
+          "sum_total": -0.8078609417942234,
+          "funding_share": 0.0,
+          "turnover_mean": 0.11013119213724716,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -4.022887749020372
+        },
+        {
+          "fold": 5,
+          "n_obs": 7597,
+          "start": 38993,
+          "end": 46590,
+          "mean_return_ci_95": [
+            -0.0001709839370510617,
+            -6.527392964740726e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": -0.4311726761989464,
+          "sum_funding": 0.0,
+          "sum_cost": -0.40783333333333327,
+          "sum_total": -0.8390060095322798,
+          "funding_share": 0.0,
+          "turnover_mean": 0.10736694309157123,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -3.5397850350702837
+        }
+      ],
+      "gross_price_pnl": -3.0224773502890168,
+      "mirror_trend_gross_price_pnl": 3.0224773502890168
+    },
+    "cash_and_carry": {
+      "n_returns": 46590,
+      "full_window": {
+        "price": -0.023195725120258567,
+        "funding": 0.4914099075311501,
+        "cost": -0.7316858225108225,
+        "total": -0.263471640099931
+      },
+      "full_window_power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "n_folds_ci_lb_gt_zero": 1,
+      "n_folds_funding_positive": 6,
+      "folds": [
+        {
+          "fold": 0,
+          "n_obs": 7597,
+          "start": 168,
+          "end": 7765,
+          "mean_return_ci_95": [
+            -1.9913797781579033e-05,
+            3.7605551879875453e-06
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": false,
+          "sum_price": -0.03839862702290972,
+          "sum_funding": 0.08480806954837292,
+          "sum_cost": -0.0868968253968254,
+          "sum_total": -0.04048738287136222,
+          "funding_share": 0.6883397729871463,
+          "turnover_mean": 0.022876615873851622,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -0.858182736784752
+        },
+        {
+          "fold": 1,
+          "n_obs": 7597,
+          "start": 7933,
+          "end": 15530,
+          "mean_return_ci_95": [
+            1.4790455822417337e-05,
+            3.076569308085188e-05
+          ],
+          "ci_lb_gt_zero": true,
+          "ci_ub_lt_zero": false,
+          "sum_price": 0.005763060906280389,
+          "sum_funding": 0.208482838649228,
+          "sum_cost": -0.0477234126984127,
+          "sum_total": 0.1665224868570957,
+          "funding_share": 0.9731007178282669,
+          "turnover_mean": 0.012563752191236725,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": 6.0893684175437075
+        },
+        {
+          "fold": 2,
+          "n_obs": 7597,
+          "start": 15698,
+          "end": 23295,
+          "mean_return_ci_95": [
+            -1.4228088277237579e-05,
+            -2.547773783390308e-06
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": 0.002299448699926451,
+          "sum_funding": 0.06085952880657732,
+          "sum_cost": -0.12396266233766234,
+          "sum_total": -0.060803684831158555,
+          "funding_share": 0.9635926864127959,
+          "turnover_mean": 0.032634635339650477,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -3.375090027537133
+        },
+        {
+          "fold": 3,
+          "n_obs": 7597,
+          "start": 23463,
+          "end": 31060,
+          "mean_return_ci_95": [
+            -2.9660702859250477e-05,
+            -2.0447764972033742e-05
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": 0.0011020699015618302,
+          "sum_funding": 0.023893952740098305,
+          "sum_cost": -0.21769848484848486,
+          "sum_total": -0.19270246220682472,
+          "funding_share": 0.9559101894985068,
+          "turnover_mean": 0.05731169799881133,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -11.53523826324287
+        },
+        {
+          "fold": 4,
+          "n_obs": 7597,
+          "start": 31228,
+          "end": 38825,
+          "mean_return_ci_95": [
+            -1.5914733130982816e-05,
+            -5.430115229198066e-06
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": 0.003646548904864597,
+          "sum_funding": 0.042266964519550344,
+          "sum_cost": -0.1292832251082251,
+          "sum_total": -0.08336971168381017,
+          "funding_share": 0.9205778727679439,
+          "turnover_mean": 0.034035336345458765,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -9.397562369137118
+        },
+        {
+          "fold": 5,
+          "n_obs": 7597,
+          "start": 38993,
+          "end": 46590,
+          "mean_return_ci_95": [
+            -1.1215379754772176e-05,
+            -1.6415489219194887e-07
+          ],
+          "ci_lb_gt_zero": false,
+          "ci_ub_lt_zero": true,
+          "sum_price": 0.002190932665555691,
+          "sum_funding": 0.05979485209376536,
+          "sum_cost": -0.10759790764790764,
+          "sum_total": -0.045612122888586605,
+          "funding_share": 0.9646542723615961,
+          "turnover_mean": 0.028326420336424282,
+          "power_gate": "insufficient_data",
+          "annualized_sharpe": null,
+          "annualized_sharpe_ungated": -5.26088670250482
+        }
+      ]
+    }
+  }
+}

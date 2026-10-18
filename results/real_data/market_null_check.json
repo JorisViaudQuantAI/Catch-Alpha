@@ -1,0 +1,8 @@
+{
+  "construction": "H111 weekly tercile book on REAL panel returns, signal circularly shifted by >=26 weeks; 5 bps/leg; S_min=1.5 diagnostic so the full downstream stack runs",
+  "n_replicates": 200,
+  "n_full_gate_pass": 0,
+  "n_status_ok": 200,
+  "mean_of_mean_weekly_net": -0.0014628675181400446,
+  "n_weekly_obs": 276
+}

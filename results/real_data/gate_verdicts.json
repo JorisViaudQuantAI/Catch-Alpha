@@ -1,0 +1,261 @@
+{
+  "raw_carry": {
+    "default": {
+      "status": "INSUFFICIENT_DATA",
+      "power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": true,
+      "decision_eligible": false,
+      "decision_checks": {
+        "pbo_score_matrix_present": false,
+        "default_thresholds_used": true
+      },
+      "checks": {}
+    },
+    "s_min_1.5_diagnostic": {
+      "status": "ok",
+      "checks": {
+        "excess_return_ci_lb_gt_zero": false,
+        "excess_sharpe_ci_lb_gt_zero": false,
+        "dsr_ge_min": false,
+        "spa_worst_p_le_max": false,
+        "pbo_le_max": null
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": false,
+      "decision_eligible": false,
+      "decision_checks": {},
+      "power_gate": {
+        "status": "ok",
+        "n_obs": 46590,
+        "n_required": 24071,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.5,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "excess": {
+        "checks": {
+          "excess_return_ci_lb_gt_zero": false,
+          "excess_sharpe_ci_lb_gt_zero": false
+        },
+        "excess_return_ci": [
+          -4.868485038050157e-05,
+          2.5784817744314015e-05
+        ],
+        "excess_sharpe_ci": [
+          -0.011714657375104786,
+          0.006026243880779199
+        ],
+        "all_pass": false
+      },
+      "dsr": {
+        "checks": {
+          "dsr_ge_min": false
+        },
+        "dsr": 0.13134680372886082,
+        "dsr_min": 0.95,
+        "sharpe": -0.002788547903720305,
+        "n_trials": 2,
+        "effective_n_trials": 2,
+        "n_obs": 46590,
+        "skewness": 1.8805038579885989,
+        "kurtosis": 52.354849417836604,
+        "sr_variance_across_trials": null,
+        "all_pass": false,
+        "annualized_sharpe": -0.26099378315079436
+      },
+      "spa": {
+        "checks": {
+          "spa_worst_p_le_max": false
+        },
+        "p_value": 0.5425,
+        "p_max": 0.1,
+        "per_baseline_p": {
+          "buy_hold_equal_weight": 0.5425,
+          "momentum_168h_top3": 0.5225
+        },
+        "all_pass": false
+      },
+      "pbo": null,
+      "pbo_status": "not_supplied_mechanics",
+      "n_trials": 2,
+      "periods_per_year": 8760.0,
+      "horizon_bars": 1
+    }
+  },
+  "hedged_carry": {
+    "default": {
+      "status": "INSUFFICIENT_DATA",
+      "power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": true,
+      "decision_eligible": false,
+      "decision_checks": {
+        "pbo_score_matrix_present": false,
+        "default_thresholds_used": true
+      },
+      "checks": {}
+    }
+  },
+  "reversal_24h": {
+    "default": {
+      "status": "INSUFFICIENT_DATA",
+      "power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": true,
+      "decision_eligible": false,
+      "decision_checks": {
+        "pbo_score_matrix_present": false,
+        "default_thresholds_used": true
+      },
+      "checks": {}
+    }
+  },
+  "reversal_8h": {
+    "default": {
+      "status": "INSUFFICIENT_DATA",
+      "power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": true,
+      "decision_eligible": false,
+      "decision_checks": {
+        "pbo_score_matrix_present": false,
+        "default_thresholds_used": true
+      },
+      "checks": {}
+    }
+  },
+  "cash_and_carry": {
+    "default": {
+      "status": "INSUFFICIENT_DATA",
+      "power_gate": {
+        "status": "insufficient_data",
+        "n_obs": 46590,
+        "n_required": 54160,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.0,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": true,
+      "decision_eligible": false,
+      "decision_checks": {
+        "pbo_score_matrix_present": false,
+        "default_thresholds_used": true
+      },
+      "checks": {}
+    },
+    "s_min_1.5_diagnostic": {
+      "status": "ok",
+      "checks": {
+        "excess_return_ci_lb_gt_zero": false,
+        "excess_sharpe_ci_lb_gt_zero": false,
+        "dsr_ge_min": false,
+        "spa_worst_p_le_max": false,
+        "pbo_le_max": null
+      },
+      "all_pass": false,
+      "statistical_all_pass": false,
+      "decision_mode": false,
+      "decision_eligible": false,
+      "decision_checks": {},
+      "power_gate": {
+        "status": "ok",
+        "n_obs": 46590,
+        "n_required": 24071,
+        "periods_per_year": 8760.0,
+        "s_min_annual": 1.5,
+        "horizon_bars": 1,
+        "variance_inflation_factor": 1.0
+      },
+      "excess": {
+        "checks": {
+          "excess_return_ci_lb_gt_zero": false,
+          "excess_sharpe_ci_lb_gt_zero": false
+        },
+        "excess_return_ci": [
+          -1.0999357443563271e-05,
+          -1.0902413949873897e-06
+        ],
+        "excess_sharpe_ci": [
+          -0.0362343251789248,
+          -0.0036550839138712534
+        ],
+        "all_pass": false
+      },
+      "dsr": {
+        "checks": {
+          "dsr_ge_min": false
+        },
+        "dsr": 3.547317860149769e-08,
+        "dsr_min": 0.95,
+        "sharpe": -0.018536219150488385,
+        "n_trials": 3,
+        "effective_n_trials": 3,
+        "n_obs": 46590,
+        "skewness": -29.9131923124003,
+        "kurtosis": 3871.801445303797,
+        "sr_variance_across_trials": null,
+        "all_pass": false,
+        "annualized_sharpe": -1.7348950523474345
+      },
+      "spa": {
+        "checks": {
+          "spa_worst_p_le_max": false
+        },
+        "p_value": 0.54,
+        "p_max": 0.1,
+        "per_baseline_p": {
+          "raw_carry": 0.4,
+          "buy_hold_equal_weight": 0.54
+        },
+        "all_pass": false
+      },
+      "pbo": null,
+      "pbo_status": "not_supplied_mechanics",
+      "n_trials": 3,
+      "periods_per_year": 8760.0,
+      "horizon_bars": 1
+    }
+  }
+}

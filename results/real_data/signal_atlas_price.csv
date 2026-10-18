@@ -1,0 +1,18 @@
+# figure: F3 panel A (price-family rank-IC forest plot)
+# source: catch_alpha.realdata.signals.figure_rows (scripts/real_data_signal_screen.py),
+#   public_v3 train+valid. rank-IC = per-period cross-sectional Spearman; nw_t = median
+#   per-fold Newey-West t (lag = horizon); folds_stable out of 6 (NW CI excludes 0).
+# Bars in F3 are mean +/- 1.96*(|mean|/|nw_t|): a heuristic, not a 95% CI of the mean.
+signal,family,horizon_h,mean_rank_ic,nw_t,folds_stable,folds_total
+feat_ret_1,raw_feature,1,-0.0674,-15.66,6,6
+feat_compound_return_8,raw_feature,1,-0.0503,-12.42,6,6
+feat_rsi,raw_feature,1,-0.0290,-6.80,6,6
+momentum_24h,momentum,1,-0.0320,-7.79,6,6
+momentum_72h,momentum,1,-0.0169,-3.50,6,6
+feat_realized_vol,raw_feature,24,-0.0630,-4.14,5,6
+feat_spread_proxy,raw_feature,24,-0.0455,-3.93,5,6
+feat_ema_fast,raw_feature,24,0.0634,4.26,6,6
+inv_vol_168h,inverse_vol,8,0.0455,4.19,6,6
+feat_illiq,raw_feature,8,0.0368,4.24,6,6
+carry_funding,carry,24,0.0311,2.44,5,6
+meanrev_168h,mean_reversion,1,0.0116,2.85,5,6

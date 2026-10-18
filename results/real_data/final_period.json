@@ -1,0 +1,95 @@
+{
+  "window": {
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-06-11T23:00:00+00:00",
+    "n_returns": 12648
+  },
+  "power_gate": {
+    "status": "insufficient_data",
+    "n_obs": 12648,
+    "n_required": 54160,
+    "periods_per_year": 8760.0,
+    "s_min_annual": 1.0,
+    "horizon_bars": 1,
+    "variance_inflation_factor": 1.0
+  },
+  "books": {
+    "raw_carry": {
+      "n": 12648,
+      "mean_per_hour": 1.924356861639341e-05,
+      "mean_ci_95": [
+        -3.0119464490321756e-05,
+        7.313832836007152e-05
+      ],
+      "ci_above_zero": false,
+      "ci_below_zero": false,
+      "sum": 0.24339265586014386
+    },
+    "hedged_carry": {
+      "n": 12648,
+      "mean_per_hour": 8.331668779702416e-06,
+      "mean_ci_95": [
+        -3.1579568712341635e-05,
+        6.230327557295582e-05
+      ],
+      "ci_above_zero": false,
+      "ci_below_zero": false,
+      "sum": 0.10537894672567616
+    },
+    "reversal_24h": {
+      "n": 12648,
+      "mean_per_hour": -2.0485171132518822e-05,
+      "mean_ci_95": [
+        -5.6769687016301634e-05,
+        1.4278012573757654e-05
+      ],
+      "ci_above_zero": false,
+      "ci_below_zero": false,
+      "sum": -0.2590964444840981
+    },
+    "cash_and_carry": {
+      "n": 12648,
+      "mean_per_hour": -2.8823929590392562e-05,
+      "mean_ci_95": [
+        -3.259720974644241e-05,
+        -2.5554447431297697e-05
+      ],
+      "ci_above_zero": false,
+      "ci_below_zero": true,
+      "sum": -0.36456506145928513
+    }
+  },
+  "equal_weight_portfolio": {
+    "n": 12648,
+    "mean_per_hour": -5.433465831703892e-06,
+    "mean_ci_95": [
+      -3.1190428126659244e-05,
+      2.6119735286020328e-05
+    ],
+    "ci_above_zero": false,
+    "ci_below_zero": false,
+    "sum": -0.06872247583939083
+  },
+  "gate": {
+    "status": "INSUFFICIENT_DATA",
+    "power_gate": {
+      "status": "insufficient_data",
+      "n_obs": 12648,
+      "n_required": 54160,
+      "periods_per_year": 8760.0,
+      "s_min_annual": 1.0,
+      "horizon_bars": 1,
+      "variance_inflation_factor": 1.0
+    },
+    "all_pass": false,
+    "statistical_all_pass": false,
+    "decision_mode": true,
+    "decision_eligible": false,
+    "decision_checks": {
+      "pbo_score_matrix_present": false,
+      "default_thresholds_used": true
+    },
+    "checks": {}
+  },
+  "no_book_ci_above_zero": true
+}

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catch-alpha"
+version = "1.0.0"
+description = "Code for 'Catch Alpha: Testing the Evaluator Before Testing the Trading Strategy' (ICAIF '26)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Joris Viaud" }]
+requires-python = ">=3.11"
+keywords = ["backtest overfitting", "deflated Sharpe ratio", "statistical power", "offline reinforcement learning", "cryptocurrency", "trading evaluation"]
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.2",
+  "matplotlib>=3.8",
+]
+
+[project.urls]
+Paper = "https://doi.org/10.1145/3858063.3858682"
+Repository = "https://github.com/JorisViaudQuantAI/Catch-Alpha"
+Homepage = "https://jorisviaud.com/papers/catch-alpha"
+
+[project.optional-dependencies]
+learning = ["torch>=2.2"]
+data = ["pyarrow>=14"]  # parquet: Binance download and the spot prices of cash-and-carry
+dev = ["pytest>=8.0", "ruff==0.17.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

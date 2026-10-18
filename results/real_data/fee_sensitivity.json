@@ -1,0 +1,116 @@
+{
+  "rows": [
+    {
+      "fee_bps": 0.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -0.0,
+      "net": 0.4682141824108916,
+      "n_folds_ci_lb_gt_zero": 5
+    },
+    {
+      "fee_bps": 1.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -0.1463371645021645,
+      "net": 0.321877017908727,
+      "n_folds_ci_lb_gt_zero": 4
+    },
+    {
+      "fee_bps": 2.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -0.292674329004329,
+      "net": 0.17553985340656253,
+      "n_folds_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 3.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -0.4390114935064935,
+      "net": 0.029202688904398005,
+      "n_folds_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 5.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -0.7316858225108225,
+      "net": -0.263471640099931,
+      "n_folds_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 10.0,
+      "funding": 0.4914099075311501,
+      "basis": -0.023195725120258567,
+      "cost": -1.463371645021645,
+      "net": -0.9951574626107534,
+      "n_folds_ci_lb_gt_zero": 1
+    }
+  ],
+  "paper_rows": [
+    {
+      "fee_bps": 0.0,
+      "label": "none",
+      "run_dir": "cash_and_carry_v3_cost0bps",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "0.0",
+      "full_window_sum_total": "0.4682141824108916",
+      "n_folds_mean_ci_lb_gt_zero": 5
+    },
+    {
+      "fee_bps": 1.0,
+      "label": "taker",
+      "run_dir": "cash_and_carry_v3_cost1bps",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "0.1463371645021645",
+      "full_window_sum_total": "0.321877017908727",
+      "n_folds_mean_ci_lb_gt_zero": 4
+    },
+    {
+      "fee_bps": 2.0,
+      "label": "maker",
+      "run_dir": "cash_and_carry_v3_maker2bps",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "0.292674329004329",
+      "full_window_sum_total": "0.17553985340656253",
+      "n_folds_mean_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 3.0,
+      "label": "taker",
+      "run_dir": "cash_and_carry_v3_cost3bps",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "0.4390114935064935",
+      "full_window_sum_total": "0.029202688904398005",
+      "n_folds_mean_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 5.0,
+      "label": "taker",
+      "run_dir": "cash_and_carry_v3",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "0.7316858225108225",
+      "full_window_sum_total": "-0.263471640099931",
+      "n_folds_mean_ci_lb_gt_zero": 1
+    },
+    {
+      "fee_bps": 10.0,
+      "label": "taker",
+      "run_dir": "cash_and_carry_v3_cost10bps",
+      "full_window_sum_funding_term": "0.4914099075311501",
+      "full_window_sum_basis_term": "-0.023195725120258567",
+      "full_window_sum_cost": "1.463371645021645",
+      "full_window_sum_total": "-0.9951574626107534",
+      "n_folds_mean_ci_lb_gt_zero": 1
+    }
+  ],
+  "cost_per_bp": 0.1463371645021645,
+  "break_even_fee_bps": 3.1995575696969727
+}

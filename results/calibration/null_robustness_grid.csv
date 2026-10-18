@@ -1,0 +1,17 @@
+# Zero-edge acceptance across null families x sample sizes (Section 2), 200 per cell.
+# Regenerate: python scripts/calibrate_evaluator.py robustness
+# params: ppy=252 sigma=0.01 n_trials=200 bootstrap_reps=150; student_t nu=3 (variance-normalized); garch a=0.08 b=0.90; ar1 phi=0.2
+# ci_lo/ci_hi: Wilson 95% intervals on the pass rate; all_status_ok: no abstention.
+family,n_obs,n_strategies,n_pass,pass_rate,ci_lo,ci_hi,all_status_ok
+gaussian,1800,200,0,0.000000,0.000000,0.018846,True
+gaussian,5000,200,0,0.000000,0.000000,0.018846,True
+gaussian,50000,200,0,0.000000,0.000000,0.018846,True
+student_t,1800,200,0,0.000000,0.000000,0.018846,True
+student_t,5000,200,0,0.000000,0.000000,0.018846,True
+student_t,50000,200,0,0.000000,0.000000,0.018846,True
+garch,1800,200,0,0.000000,0.000000,0.018846,True
+garch,5000,200,0,0.000000,0.000000,0.018846,True
+garch,50000,200,0,0.000000,0.000000,0.018846,True
+ar1,1800,200,0,0.000000,0.000000,0.018846,True
+ar1,5000,200,0,0.000000,0.000000,0.018846,True
+ar1,50000,200,0,0.000000,0.000000,0.018846,True

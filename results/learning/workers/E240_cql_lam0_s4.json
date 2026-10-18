@@ -1,0 +1,2263 @@
+{
+ "protocol_version": "e240-common-flat-v1",
+ "smoke": false,
+ "arm": {
+  "name": "cql_lam0",
+  "policy": "cql_repo",
+  "lam_quad": 0.0,
+  "position_aware": false,
+  "discount_factor": 0.99,
+  "role": "primary"
+ },
+ "training_seed": 4,
+ "training_source_periods": 2000,
+ "training_periods": 1000,
+ "evaluation_seeds": [
+  1000000,
+  1000001,
+  1000002,
+  1000003,
+  1000004,
+  1000005,
+  1000006,
+  1000007,
+  1000008,
+  1000009,
+  1000010,
+  1000011,
+  1000012,
+  1000013,
+  1000014,
+  1000015,
+  1000016,
+  1000017,
+  1000018,
+  1000019,
+  1000020,
+  1000021,
+  1000022,
+  1000023,
+  1000024,
+  1000025,
+  1000026,
+  1000027,
+  1000028,
+  1000029,
+  1000030,
+  1000031,
+  1000032,
+  1000033,
+  1000034,
+  1000035,
+  1000036,
+  1000037,
+  1000038,
+  1000039,
+  1000040,
+  1000041,
+  1000042,
+  1000043,
+  1000044,
+  1000045,
+  1000046,
+  1000047,
+  1000048,
+  1000049,
+  1000050,
+  1000051,
+  1000052,
+  1000053,
+  1000054,
+  1000055,
+  1000056,
+  1000057,
+  1000058,
+  1000059,
+  1000060,
+  1000061,
+  1000062,
+  1000063,
+  1000064,
+  1000065,
+  1000066,
+  1000067,
+  1000068,
+  1000069,
+  1000070,
+  1000071,
+  1000072,
+  1000073,
+  1000074,
+  1000075,
+  1000076,
+  1000077,
+  1000078,
+  1000079,
+  1000080,
+  1000081,
+  1000082,
+  1000083,
+  1000084,
+  1000085,
+  1000086,
+  1000087,
+  1000088,
+  1000089,
+  1000090,
+  1000091,
+  1000092,
+  1000093,
+  1000094,
+  1000095,
+  1000096,
+  1000097,
+  1000098,
+  1000099
+ ],
+ "evaluation_periods": 1000,
+ "initial_weights": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "fitted_contract": {
+  "risk_aversion": 10.0,
+  "discount_factor": 0.99,
+  "lookback": 16,
+  "position_aware": false,
+  "coordinate": "absolute"
+ },
+ "summary": {
+  "candidate_pnl_mean": 0.4808861288728907,
+  "reference_pnl_mean": 1.2366597171298823,
+  "recovery_ratio_of_means": 0.38885889320383255,
+  "n_eval_paths_negative": 13,
+  "median_turnover_ratio": 0.3223853529063103,
+  "denominator_gate": {
+   "denominator_mean": 1.2366597171298823,
+   "denominator_one_sided_low": 1.1827676359560146,
+   "minimum_effect": 0.01,
+   "sign_correct": true,
+   "separated_from_zero": true,
+   "practically_large": true,
+   "reference_valid": true,
+   "ratio_interval": {
+    "low": 0.32352202291207766,
+    "high": 0.4546137609538867,
+    "bounded": true,
+    "reason": "bounded"
+   },
+   "recovery_identifiable": true,
+   "competence_threshold": 0.5,
+   "competence_score": 0.6183298585649412,
+   "inaction_score": 0.0,
+   "threshold_above_inaction": true,
+   "competence_threshold_admissible": true,
+   "status": "RECOVERY_AND_THRESHOLD_ADMISSIBLE"
+  }
+ },
+ "evaluation_rows": [
+  {
+   "eval_seed": 1000000,
+   "candidate": {
+    "pnl": 0.9185346377746113,
+    "gross_pnl": 0.9185346377746113,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.451592403464,
+    "turnover_l2_squared": 27.27776862798363,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5338968247910936,
+    "gross_pnl": 1.5338968247910936,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.0342941699128,
+    "turnover_l2_squared": 251.75373654927475,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32339720867557586
+  },
+  {
+   "eval_seed": 1000001,
+   "candidate": {
+    "pnl": 0.7543392560506911,
+    "gross_pnl": 0.7543392560506911,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.25231224892195,
+    "turnover_l2_squared": 27.214160806018818,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0809355967967873,
+    "gross_pnl": 1.0809355967967873,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 904.2490609585802,
+    "turnover_l2_squared": 258.61744723338876,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3176694614915168
+  },
+  {
+   "eval_seed": 1000002,
+   "candidate": {
+    "pnl": 0.5640672502820882,
+    "gross_pnl": 0.5640672502820882,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 293.90148682286963,
+    "turnover_l2_squared": 28.440083134129843,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3623828425532531,
+    "gross_pnl": 1.3623828425532531,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.3063475825475,
+    "turnover_l2_squared": 254.03131854570498,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32826918698437113
+  },
+  {
+   "eval_seed": 1000003,
+   "candidate": {
+    "pnl": 0.6855058704728313,
+    "gross_pnl": 0.6855058704728313,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 295.95125716761686,
+    "turnover_l2_squared": 28.305468315536118,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.401244328000035,
+    "gross_pnl": 1.401244328000035,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 906.3597458040131,
+    "turnover_l2_squared": 258.6789135948948,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3265273623831171
+  },
+  {
+   "eval_seed": 1000004,
+   "candidate": {
+    "pnl": 0.18097117562884546,
+    "gross_pnl": 0.18097117562884546,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 294.21489153360017,
+    "turnover_l2_squared": 28.189039405496032,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1865426647608603,
+    "gross_pnl": 1.1865426647608603,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 910.7614158599172,
+    "turnover_l2_squared": 259.0303087583224,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32304277103769286
+  },
+  {
+   "eval_seed": 1000005,
+   "candidate": {
+    "pnl": 0.33395265621018017,
+    "gross_pnl": 0.33395265621018017,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 279.0810427601682,
+    "turnover_l2_squared": 25.351669409470674,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0190116808562724,
+    "gross_pnl": 1.0190116808562724,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 899.5955542076117,
+    "turnover_l2_squared": 256.15903488876256,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31022945973314686
+  },
+  {
+   "eval_seed": 1000006,
+   "candidate": {
+    "pnl": 0.8095714504845479,
+    "gross_pnl": 0.8095714504845479,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 281.9288835360203,
+    "turnover_l2_squared": 26.241548551641763,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.984072361976809,
+    "gross_pnl": 0.984072361976809,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.4906711757649,
+    "turnover_l2_squared": 252.43554904223902,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3151837046723342
+  },
+  {
+   "eval_seed": 1000007,
+   "candidate": {
+    "pnl": 0.6059860765338085,
+    "gross_pnl": 0.6059860765338085,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.69170368183404,
+    "turnover_l2_squared": 26.657270771042974,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 2.0426239632349086,
+    "gross_pnl": 2.0426239632349086,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.4676744327298,
+    "turnover_l2_squared": 253.83846628863125,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3193985784483708
+  },
+  {
+   "eval_seed": 1000008,
+   "candidate": {
+    "pnl": -0.44075742398836293,
+    "gross_pnl": -0.44075742398836293,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.28400675661396,
+    "turnover_l2_squared": 28.688407136461116,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1584075844566146,
+    "gross_pnl": 1.1584075844566146,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 904.7909047112098,
+    "turnover_l2_squared": 257.1522010037269,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32304039003343527
+  },
+  {
+   "eval_seed": 1000009,
+   "candidate": {
+    "pnl": 0.04120388125638702,
+    "gross_pnl": 0.04120388125638702,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.3331714763772,
+    "turnover_l2_squared": 26.753422895523713,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.240363508361944,
+    "gross_pnl": 1.240363508361944,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 882.6731537675005,
+    "turnover_l2_squared": 248.21802055766727,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3232602807262166
+  },
+  {
+   "eval_seed": 1000010,
+   "candidate": {
+    "pnl": 0.42327924863757854,
+    "gross_pnl": 0.42327924863757854,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 274.0555756770773,
+    "turnover_l2_squared": 24.681552069328472,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9052618740660912,
+    "gross_pnl": 0.9052618740660912,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 860.1073621258256,
+    "turnover_l2_squared": 234.0590395118815,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3186294964383592
+  },
+  {
+   "eval_seed": 1000011,
+   "candidate": {
+    "pnl": 0.5974447036805295,
+    "gross_pnl": 0.5974447036805295,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 280.7115745290648,
+    "turnover_l2_squared": 25.696888724940774,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4201151389614879,
+    "gross_pnl": 1.4201151389614879,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 884.5442604015698,
+    "turnover_l2_squared": 245.02555833087013,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31735164320847664
+  },
+  {
+   "eval_seed": 1000012,
+   "candidate": {
+    "pnl": 0.3338491597931021,
+    "gross_pnl": 0.3338491597931021,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 286.30571041151416,
+    "turnover_l2_squared": 26.347845458125864,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 2.2125055008226218,
+    "gross_pnl": 2.2125055008226218,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 892.007101013849,
+    "turnover_l2_squared": 251.42729771945625,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3209679722124421
+  },
+  {
+   "eval_seed": 1000013,
+   "candidate": {
+    "pnl": 0.7375082073112063,
+    "gross_pnl": 0.7375082073112063,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 297.35947227827273,
+    "turnover_l2_squared": 29.398375646120336,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4112653080593462,
+    "gross_pnl": 1.4112653080593462,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 910.6488357486669,
+    "turnover_l2_squared": 263.6662122689819,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32653582874655096
+  },
+  {
+   "eval_seed": 1000014,
+   "candidate": {
+    "pnl": -0.13318868685466353,
+    "gross_pnl": -0.13318868685466353,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 286.2949707277585,
+    "turnover_l2_squared": 27.15371753683722,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.651617238862732,
+    "gross_pnl": 1.651617238862732,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 883.3257025870844,
+    "turnover_l2_squared": 246.09593035913838,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32411031388451367
+  },
+  {
+   "eval_seed": 1000015,
+   "candidate": {
+    "pnl": 0.586944139887959,
+    "gross_pnl": 0.586944139887959,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.6764114337275,
+    "turnover_l2_squared": 26.973128140210346,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.475963824792017,
+    "gross_pnl": 1.475963824792017,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 907.5888072688831,
+    "turnover_l2_squared": 254.83071732555166,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3147641411460165
+  },
+  {
+   "eval_seed": 1000016,
+   "candidate": {
+    "pnl": 0.5592312285744789,
+    "gross_pnl": 0.5592312285744789,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.4668027641019,
+    "turnover_l2_squared": 28.060977438073216,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3460462174302372,
+    "gross_pnl": 1.3460462174302372,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 901.4041965613433,
+    "turnover_l2_squared": 255.4540473993962,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3244568905711752
+  },
+  {
+   "eval_seed": 1000017,
+   "candidate": {
+    "pnl": 0.576509633065702,
+    "gross_pnl": 0.576509633065702,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.1295699934708,
+    "turnover_l2_squared": 26.76380441741165,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.367936812890049,
+    "gross_pnl": 1.367936812890049,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 896.0218808202044,
+    "turnover_l2_squared": 252.78849650520334,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32156532799145654
+  },
+  {
+   "eval_seed": 1000018,
+   "candidate": {
+    "pnl": 0.575168022706117,
+    "gross_pnl": 0.575168022706117,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.83144372561947,
+    "turnover_l2_squared": 26.459617099298967,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3874702789530842,
+    "gross_pnl": 1.3874702789530842,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 890.8439632965892,
+    "turnover_l2_squared": 249.75032989352823,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3174870744804679
+  },
+  {
+   "eval_seed": 1000019,
+   "candidate": {
+    "pnl": 0.16517459747118574,
+    "gross_pnl": 0.16517459747118574,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.7329549288843,
+    "turnover_l2_squared": 28.36780998953196,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.6124454757762292,
+    "gross_pnl": 1.6124454757762292,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 905.826037302686,
+    "turnover_l2_squared": 255.49473180033812,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3231668586173199
+  },
+  {
+   "eval_seed": 1000020,
+   "candidate": {
+    "pnl": 0.8667321074373184,
+    "gross_pnl": 0.8667321074373184,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.2320843937341,
+    "turnover_l2_squared": 27.305285765894176,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.7382585448411232,
+    "gross_pnl": 0.7382585448411232,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 882.8181709545315,
+    "turnover_l2_squared": 246.075610914093,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32649088326091913
+  },
+  {
+   "eval_seed": 1000021,
+   "candidate": {
+    "pnl": 1.067232997730691,
+    "gross_pnl": 1.067232997730691,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 278.4699719026685,
+    "turnover_l2_squared": 25.17061186160322,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.6881299334722604,
+    "gross_pnl": 1.6881299334722604,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 872.8763772753882,
+    "turnover_l2_squared": 242.12690388143082,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3190256709339409
+  },
+  {
+   "eval_seed": 1000022,
+   "candidate": {
+    "pnl": 0.6563552668786494,
+    "gross_pnl": 0.6563552668786494,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 276.14187287772074,
+    "turnover_l2_squared": 24.51263663966134,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4647871989511012,
+    "gross_pnl": 1.4647871989511012,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.9174151648767,
+    "turnover_l2_squared": 252.38819737812406,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3075359361718307
+  },
+  {
+   "eval_seed": 1000023,
+   "candidate": {
+    "pnl": 0.19757743849830559,
+    "gross_pnl": 0.19757743849830559,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.73463393514976,
+    "turnover_l2_squared": 26.848716913485852,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4655638980510581,
+    "gross_pnl": 1.4655638980510581,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 881.4506558240391,
+    "turnover_l2_squared": 244.7173592654924,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3241640720864016
+  },
+  {
+   "eval_seed": 1000024,
+   "candidate": {
+    "pnl": 0.4935090535811471,
+    "gross_pnl": 0.4935090535811471,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.1135798942996,
+    "turnover_l2_squared": 27.864364296111965,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9120786178401918,
+    "gross_pnl": 0.9120786178401918,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 902.0729148140235,
+    "turnover_l2_squared": 254.10141170600195,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.321607682849131
+  },
+  {
+   "eval_seed": 1000025,
+   "candidate": {
+    "pnl": 0.9518632452049031,
+    "gross_pnl": 0.9518632452049031,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 297.0321005748119,
+    "turnover_l2_squared": 28.97382419122053,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5915789061347259,
+    "gross_pnl": 1.5915789061347259,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 908.8631052726414,
+    "turnover_l2_squared": 260.94875112695706,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32681720586040075
+  },
+  {
+   "eval_seed": 1000026,
+   "candidate": {
+    "pnl": 0.8961762073207811,
+    "gross_pnl": 0.8961762073207811,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 294.29163898096886,
+    "turnover_l2_squared": 28.08544129318479,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4441349254674165,
+    "gross_pnl": 1.4441349254674165,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 908.5879593590507,
+    "turnover_l2_squared": 258.8328226592764,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3238999988383869
+  },
+  {
+   "eval_seed": 1000027,
+   "candidate": {
+    "pnl": -0.4564809420834749,
+    "gross_pnl": -0.4564809420834749,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.07212631590664,
+    "turnover_l2_squared": 27.939888561669697,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.065522744363603,
+    "gross_pnl": 1.065522744363603,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 879.4321347411023,
+    "turnover_l2_squared": 244.1813328526808,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3321144574753233
+  },
+  {
+   "eval_seed": 1000028,
+   "candidate": {
+    "pnl": 1.1152393070687505,
+    "gross_pnl": 1.1152393070687505,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 293.7715842972975,
+    "turnover_l2_squared": 27.953458536534654,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3021874245851004,
+    "gross_pnl": 1.3021874245851004,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 878.1338484984008,
+    "turnover_l2_squared": 242.5064486811686,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.334540781908867
+  },
+  {
+   "eval_seed": 1000029,
+   "candidate": {
+    "pnl": 0.4496897507266798,
+    "gross_pnl": 0.4496897507266798,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 286.41592963354196,
+    "turnover_l2_squared": 26.522889906382257,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5911508938162082,
+    "gross_pnl": 1.5911508938162082,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 883.9703355881502,
+    "turnover_l2_squared": 250.81473962446051,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32401079323886467
+  },
+  {
+   "eval_seed": 1000030,
+   "candidate": {
+    "pnl": 0.3307398960894815,
+    "gross_pnl": 0.3307398960894815,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.7282417655224,
+    "turnover_l2_squared": 28.368385805697706,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1746396376476207,
+    "gross_pnl": 1.1746396376476207,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 896.1654542069882,
+    "turnover_l2_squared": 248.9448605283475,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.326645309068018
+  },
+  {
+   "eval_seed": 1000031,
+   "candidate": {
+    "pnl": 0.6886816093640986,
+    "gross_pnl": 0.6886816093640986,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 286.22229017398786,
+    "turnover_l2_squared": 26.913510217761438,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0183626560655448,
+    "gross_pnl": 1.0183626560655448,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 901.101022974588,
+    "turnover_l2_squared": 255.69959514789605,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31763618382004616
+  },
+  {
+   "eval_seed": 1000032,
+   "candidate": {
+    "pnl": 0.3333839573633369,
+    "gross_pnl": 0.3333839573633369,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.6686076646438,
+    "turnover_l2_squared": 26.72045249363382,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4787827586536177,
+    "gross_pnl": 1.4787827586536177,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 874.8860868416086,
+    "turnover_l2_squared": 241.18766573851116,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3299499352044274
+  },
+  {
+   "eval_seed": 1000033,
+   "candidate": {
+    "pnl": 0.7285678172768586,
+    "gross_pnl": 0.7285678172768586,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.92616445955355,
+    "turnover_l2_squared": 27.071264709411015,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.274619174546538,
+    "gross_pnl": 1.274619174546538,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 875.5796980232117,
+    "turnover_l2_squared": 244.53720337840358,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.33112481378236297
+  },
+  {
+   "eval_seed": 1000034,
+   "candidate": {
+    "pnl": 0.11746923031001993,
+    "gross_pnl": 0.11746923031001993,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 298.02555303741246,
+    "turnover_l2_squared": 28.628933972353153,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0543461455846288,
+    "gross_pnl": 1.0543461455846288,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.9694628119323,
+    "turnover_l2_squared": 251.88245059853978,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3318882939561943
+  },
+  {
+   "eval_seed": 1000035,
+   "candidate": {
+    "pnl": 0.4367476808410968,
+    "gross_pnl": 0.4367476808410968,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 278.1266036485322,
+    "turnover_l2_squared": 25.778551022287854,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.021294383804312,
+    "gross_pnl": 1.021294383804312,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 886.3267615946679,
+    "turnover_l2_squared": 250.13349144733965,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3137969152010375
+  },
+  {
+   "eval_seed": 1000036,
+   "candidate": {
+    "pnl": 0.4498940741347996,
+    "gross_pnl": 0.4498940741347996,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 275.8900544627104,
+    "turnover_l2_squared": 24.69600591091622,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.971736251222381,
+    "gross_pnl": 0.971736251222381,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 878.0816189903126,
+    "turnover_l2_squared": 244.81971178239814,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3141963668251597
+  },
+  {
+   "eval_seed": 1000037,
+   "candidate": {
+    "pnl": 1.0320321808011241,
+    "gross_pnl": 1.0320321808011241,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.2908854058478,
+    "turnover_l2_squared": 26.854499523748842,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2266128120159843,
+    "gross_pnl": 1.2266128120159843,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 890.146273501392,
+    "turnover_l2_squared": 248.9563312672834,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3227457036648467
+  },
+  {
+   "eval_seed": 1000038,
+   "candidate": {
+    "pnl": 0.17026161165715403,
+    "gross_pnl": 0.17026161165715403,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 293.1608916653786,
+    "turnover_l2_squared": 27.927791474731137,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.32866343420414,
+    "gross_pnl": 1.32866343420414,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 904.3295483425027,
+    "turnover_l2_squared": 255.11598624790898,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.324174845555691
+  },
+  {
+   "eval_seed": 1000039,
+   "candidate": {
+    "pnl": 0.4169353726559843,
+    "gross_pnl": 0.4169353726559843,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 284.63526658073533,
+    "turnover_l2_squared": 26.480191980676352,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.189915834306098,
+    "gross_pnl": 1.189915834306098,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.6654099767402,
+    "turnover_l2_squared": 255.07168773985256,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3177919604912811
+  },
+  {
+   "eval_seed": 1000040,
+   "candidate": {
+    "pnl": 0.4424602205528837,
+    "gross_pnl": 0.4424602205528837,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.6700133384438,
+    "turnover_l2_squared": 27.267320380174993,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.4174447243856672,
+    "gross_pnl": 1.4174447243856672,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.09826861904,
+    "turnover_l2_squared": 251.38792789791512,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32401134135047494
+  },
+  {
+   "eval_seed": 1000041,
+   "candidate": {
+    "pnl": 0.6058330552038914,
+    "gross_pnl": 0.6058330552038914,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 293.03257537679747,
+    "turnover_l2_squared": 28.143708626518716,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.180689982257875,
+    "gross_pnl": 1.180689982257875,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.6207326144213,
+    "turnover_l2_squared": 253.9601757018283,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3271837784744009
+  },
+  {
+   "eval_seed": 1000042,
+   "candidate": {
+    "pnl": 0.34505889541917983,
+    "gross_pnl": 0.34505889541917983,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 277.32610073371325,
+    "turnover_l2_squared": 25.096341799493796,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8644874849065203,
+    "gross_pnl": 0.8644874849065203,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.3551746471203,
+    "turnover_l2_squared": 247.87639682571512,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31008497361591936
+  },
+  {
+   "eval_seed": 1000043,
+   "candidate": {
+    "pnl": 0.4555388051244699,
+    "gross_pnl": 0.4555388051244699,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.97014643461443,
+    "turnover_l2_squared": 26.261781795732823,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.7121909622122818,
+    "gross_pnl": 0.7121909622122818,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 884.186260308139,
+    "turnover_l2_squared": 247.1671764956949,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3200345437804013
+  },
+  {
+   "eval_seed": 1000044,
+   "candidate": {
+    "pnl": -0.5317342385972663,
+    "gross_pnl": -0.5317342385972663,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 291.54831433319487,
+    "turnover_l2_squared": 27.570372118574785,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1055186679260065,
+    "gross_pnl": 1.1055186679260065,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 900.6568815910578,
+    "turnover_l2_squared": 255.01302414587678,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3237063084647279
+  },
+  {
+   "eval_seed": 1000045,
+   "candidate": {
+    "pnl": 0.7608534327432634,
+    "gross_pnl": 0.7608534327432634,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.2921998386737,
+    "turnover_l2_squared": 27.62408222291942,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5665190837741028,
+    "gross_pnl": 1.5665190837741028,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 885.3693678738346,
+    "turnover_l2_squared": 250.32033349071656,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32674746872414717
+  },
+  {
+   "eval_seed": 1000046,
+   "candidate": {
+    "pnl": 0.7725762116971194,
+    "gross_pnl": 0.7725762116971194,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 294.2066035056487,
+    "turnover_l2_squared": 28.187714521305644,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.083356643147287,
+    "gross_pnl": 1.083356643147287,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.3424971066415,
+    "turnover_l2_squared": 248.1615855414738,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32859671517480377
+  },
+  {
+   "eval_seed": 1000047,
+   "candidate": {
+    "pnl": -0.2825955646674937,
+    "gross_pnl": -0.2825955646674937,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.3101317328401,
+    "turnover_l2_squared": 26.976119809242338,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2417669681646277,
+    "gross_pnl": 1.2417669681646277,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 890.6335608998488,
+    "turnover_l2_squared": 249.8355293535861,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32483632375197774
+  },
+  {
+   "eval_seed": 1000048,
+   "candidate": {
+    "pnl": -0.11236600054384216,
+    "gross_pnl": -0.11236600054384216,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.716645590961,
+    "turnover_l2_squared": 27.30586670700142,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8203015248275733,
+    "gross_pnl": 0.8203015248275733,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 885.413800461014,
+    "turnover_l2_squared": 246.7476191815916,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3272104471831277
+  },
+  {
+   "eval_seed": 1000049,
+   "candidate": {
+    "pnl": 0.7561824649941251,
+    "gross_pnl": 0.7561824649941251,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 281.06648606143426,
+    "turnover_l2_squared": 25.95648656196878,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1310002223046312,
+    "gross_pnl": 1.1310002223046312,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 891.5830277129426,
+    "turnover_l2_squared": 251.33010783929217,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3152443208597366
+  },
+  {
+   "eval_seed": 1000050,
+   "candidate": {
+    "pnl": 0.5151026567379315,
+    "gross_pnl": 0.5151026567379315,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.6237508098129,
+    "turnover_l2_squared": 27.78936016100078,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.198017516374592,
+    "gross_pnl": 1.198017516374592,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 891.0815234269248,
+    "turnover_l2_squared": 253.2706959968872,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3283916713752961
+  },
+  {
+   "eval_seed": 1000051,
+   "candidate": {
+    "pnl": 0.8355363436463246,
+    "gross_pnl": 0.8355363436463246,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.86065039329696,
+    "turnover_l2_squared": 27.832724107026195,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.6657334759110187,
+    "gross_pnl": 0.6657334759110187,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 911.5752844898961,
+    "turnover_l2_squared": 259.9169840045231,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3190747438441776
+  },
+  {
+   "eval_seed": 1000052,
+   "candidate": {
+    "pnl": -0.1037285645421024,
+    "gross_pnl": -0.1037285645421024,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.5568445008248,
+    "turnover_l2_squared": 27.02716677009063,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.505702320900689,
+    "gross_pnl": 0.505702320900689,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.7415676979872,
+    "turnover_l2_squared": 253.83109597826953,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32250300524567205
+  },
+  {
+   "eval_seed": 1000053,
+   "candidate": {
+    "pnl": 1.1066840756075238,
+    "gross_pnl": 1.1066840756075238,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.33433175634127,
+    "turnover_l2_squared": 27.274215368014445,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.7543070370655034,
+    "gross_pnl": 1.7543070370655034,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 893.9606933787,
+    "turnover_l2_squared": 252.30900741700225,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32365442227980973
+  },
+  {
+   "eval_seed": 1000054,
+   "candidate": {
+    "pnl": 0.8355520651660511,
+    "gross_pnl": 0.8355520651660511,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.7877151009161,
+    "turnover_l2_squared": 27.536782152350725,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2519851993798436,
+    "gross_pnl": 1.2519851993798436,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.1868821126554,
+    "turnover_l2_squared": 251.21318740425664,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3274345899697831
+  },
+  {
+   "eval_seed": 1000055,
+   "candidate": {
+    "pnl": 1.0237045931649342,
+    "gross_pnl": 1.0237045931649342,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.5048198500881,
+    "turnover_l2_squared": 27.537331581464223,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8147563707551193,
+    "gross_pnl": 0.8147563707551193,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 903.8838872388005,
+    "turnover_l2_squared": 255.1564386589829,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31918349682216085
+  },
+  {
+   "eval_seed": 1000056,
+   "candidate": {
+    "pnl": 0.7056369581512834,
+    "gross_pnl": 0.7056369581512834,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.2310809198534,
+    "turnover_l2_squared": 27.456320615005325,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3820539331400732,
+    "gross_pnl": 1.3820539331400732,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 887.6897450834513,
+    "turnover_l2_squared": 250.1780868443421,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.329204074439748
+  },
+  {
+   "eval_seed": 1000057,
+   "candidate": {
+    "pnl": -0.5441268421297936,
+    "gross_pnl": -0.5441268421297936,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 281.8878151990939,
+    "turnover_l2_squared": 26.55883227321199,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0951869838737553,
+    "gross_pnl": 1.0951869838737553,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.7556586221326,
+    "turnover_l2_squared": 254.0213096232747,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3139916885979118
+  },
+  {
+   "eval_seed": 1000058,
+   "candidate": {
+    "pnl": 0.5729288645086651,
+    "gross_pnl": 0.5729288645086651,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 280.39488120237365,
+    "turnover_l2_squared": 25.69594464023536,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.48327833947221255,
+    "gross_pnl": 0.48327833947221255,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 905.5218303705333,
+    "turnover_l2_squared": 259.68597595842107,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.309650051272246
+  },
+  {
+   "eval_seed": 1000059,
+   "candidate": {
+    "pnl": 0.680788311969138,
+    "gross_pnl": 0.680788311969138,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.0157973440364,
+    "turnover_l2_squared": 25.96474237307127,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3597004554995982,
+    "gross_pnl": 1.3597004554995982,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 891.0509863896295,
+    "turnover_l2_squared": 253.45370859636847,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3164979351930367
+  },
+  {
+   "eval_seed": 1000060,
+   "candidate": {
+    "pnl": 0.6381702478391393,
+    "gross_pnl": 0.6381702478391393,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.78081179223955,
+    "turnover_l2_squared": 27.209184339548205,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5167282039325483,
+    "gross_pnl": 1.5167282039325483,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 895.3774068100611,
+    "turnover_l2_squared": 249.74739876912048,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32475781673808046
+  },
+  {
+   "eval_seed": 1000061,
+   "candidate": {
+    "pnl": 0.028535874544155716,
+    "gross_pnl": 0.028535874544155716,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.9590333234519,
+    "turnover_l2_squared": 26.718605669132618,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.7254148129117063,
+    "gross_pnl": 0.7254148129117063,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 890.0205722408755,
+    "turnover_l2_squared": 250.63184964671137,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3212948579418452
+  },
+  {
+   "eval_seed": 1000062,
+   "candidate": {
+    "pnl": 0.3577171990079404,
+    "gross_pnl": 0.3577171990079404,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.79234093322884,
+    "turnover_l2_squared": 27.13783739511505,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5273611609191957,
+    "gross_pnl": 1.5273611609191957,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.9890847719362,
+    "turnover_l2_squared": 252.89145432753398,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32159894349559265
+  },
+  {
+   "eval_seed": 1000063,
+   "candidate": {
+    "pnl": 0.62683556616614,
+    "gross_pnl": 0.62683556616614,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.72388391569257,
+    "turnover_l2_squared": 26.951614348272166,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.635651782644141,
+    "gross_pnl": 1.635651782644141,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 902.8987391070405,
+    "turnover_l2_squared": 256.5235061529596,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3197743793520391
+  },
+  {
+   "eval_seed": 1000064,
+   "candidate": {
+    "pnl": 0.43586154553232054,
+    "gross_pnl": 0.43586154553232054,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 291.18130774900783,
+    "turnover_l2_squared": 27.392694511086475,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0003235144966245,
+    "gross_pnl": 1.0003235144966245,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 892.0561591238074,
+    "turnover_l2_squared": 252.15123749738987,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32641589295791756
+  },
+  {
+   "eval_seed": 1000065,
+   "candidate": {
+    "pnl": 0.7157447248103986,
+    "gross_pnl": 0.7157447248103986,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 301.9357958473265,
+    "turnover_l2_squared": 29.71173839116533,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3034266303361175,
+    "gross_pnl": 1.3034266303361175,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 899.4902998650214,
+    "turnover_l2_squared": 252.84595138601458,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.33567432121573226
+  },
+  {
+   "eval_seed": 1000066,
+   "candidate": {
+    "pnl": 0.02671008822271085,
+    "gross_pnl": 0.02671008822271085,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.14431086031254,
+    "turnover_l2_squared": 26.17509360242172,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5283877536855692,
+    "gross_pnl": 1.5283877536855692,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 899.126808021043,
+    "turnover_l2_squared": 252.3647136429081,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31379812985590494
+  },
+  {
+   "eval_seed": 1000067,
+   "candidate": {
+    "pnl": 0.5706788942381549,
+    "gross_pnl": 0.5706788942381549,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 281.18920054193586,
+    "turnover_l2_squared": 25.743313770862148,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.434687694058364,
+    "gross_pnl": 1.434687694058364,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 884.2915706495914,
+    "turnover_l2_squared": 246.1588776318468,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31798245044377976
+  },
+  {
+   "eval_seed": 1000068,
+   "candidate": {
+    "pnl": 0.4965646993481441,
+    "gross_pnl": 0.4965646993481441,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 284.73244861734565,
+    "turnover_l2_squared": 27.11904848675327,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3173603393027689,
+    "gross_pnl": 1.3173603393027689,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 900.2129652252479,
+    "turnover_l2_squared": 257.05588246849106,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3162945431985652
+  },
+  {
+   "eval_seed": 1000069,
+   "candidate": {
+    "pnl": -0.198508017383147,
+    "gross_pnl": -0.198508017383147,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.47159187158104,
+    "turnover_l2_squared": 27.091716598848784,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9760648370203675,
+    "gross_pnl": 0.9760648370203675,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 897.0152493477799,
+    "turnover_l2_squared": 254.3301176810811,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.321590510396929
+  },
+  {
+   "eval_seed": 1000070,
+   "candidate": {
+    "pnl": 0.9566626967720444,
+    "gross_pnl": 0.9566626967720444,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 272.9890979670454,
+    "turnover_l2_squared": 24.33514021160495,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8773221541799519,
+    "gross_pnl": 0.8773221541799519,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 886.5225597260578,
+    "turnover_l2_squared": 248.843903203134,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3079324885442296
+  },
+  {
+   "eval_seed": 1000071,
+   "candidate": {
+    "pnl": 0.6095829665218464,
+    "gross_pnl": 0.6095829665218464,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 283.60518883215263,
+    "turnover_l2_squared": 26.140769640583162,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9033496691505172,
+    "gross_pnl": 0.9033496691505172,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 911.5523136559641,
+    "turnover_l2_squared": 258.7936198020669,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3111233272994469
+  },
+  {
+   "eval_seed": 1000072,
+   "candidate": {
+    "pnl": 0.4722576335046587,
+    "gross_pnl": 0.4722576335046587,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 292.56625347945374,
+    "turnover_l2_squared": 27.821354595730348,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8891679221620681,
+    "gross_pnl": 0.8891679221620681,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 894.4919809210696,
+    "turnover_l2_squared": 249.40133157961444,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32707532288684643
+  },
+  {
+   "eval_seed": 1000073,
+   "candidate": {
+    "pnl": 1.005023088600742,
+    "gross_pnl": 1.005023088600742,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 289.1535796417156,
+    "turnover_l2_squared": 27.490344902845646,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2127631236134215,
+    "gross_pnl": 1.2127631236134215,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 905.9403668560553,
+    "turnover_l2_squared": 258.2850378356754,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3191750695966716
+  },
+  {
+   "eval_seed": 1000074,
+   "candidate": {
+    "pnl": 0.07957334680224887,
+    "gross_pnl": 0.07957334680224887,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.7039582596626,
+    "turnover_l2_squared": 27.30174944933394,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.3110930289766154,
+    "gross_pnl": 1.3110930289766154,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 911.9212205584627,
+    "turnover_l2_squared": 262.004991884071,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31549211902698354
+  },
+  {
+   "eval_seed": 1000075,
+   "candidate": {
+    "pnl": 0.2425218499290941,
+    "gross_pnl": 0.2425218499290941,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 301.8216846198775,
+    "turnover_l2_squared": 29.902969839815043,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9648275982358416,
+    "gross_pnl": 0.9648275982358416,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 880.0979444380209,
+    "turnover_l2_squared": 245.40214920019028,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.34294101756208867
+  },
+  {
+   "eval_seed": 1000076,
+   "candidate": {
+    "pnl": 0.614360979601298,
+    "gross_pnl": 0.614360979601298,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 285.59292886708863,
+    "turnover_l2_squared": 26.907286127785397,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.8115698359734422,
+    "gross_pnl": 1.8115698359734422,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 892.5497571822489,
+    "turnover_l2_squared": 249.74588084910846,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3199742384880552
+  },
+  {
+   "eval_seed": 1000077,
+   "candidate": {
+    "pnl": 0.06443545572272202,
+    "gross_pnl": 0.06443545572272202,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.7470788345672,
+    "turnover_l2_squared": 27.31983912403642,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2498161501517098,
+    "gross_pnl": 1.2498161501517098,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 902.7141838789685,
+    "turnover_l2_squared": 257.24870669407005,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3220809908904114
+  },
+  {
+   "eval_seed": 1000078,
+   "candidate": {
+    "pnl": 1.1181899764256347,
+    "gross_pnl": 1.1181899764256347,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 290.8133067979943,
+    "turnover_l2_squared": 27.803327802182082,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 2.015640273587514,
+    "gross_pnl": 2.015640273587514,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 909.0481180376955,
+    "turnover_l2_squared": 258.73025371643485,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31990969567788613
+  },
+  {
+   "eval_seed": 1000079,
+   "candidate": {
+    "pnl": 0.8700455412945631,
+    "gross_pnl": 0.8700455412945631,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.14430343476124,
+    "turnover_l2_squared": 25.97996509983095,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0620352477460915,
+    "gross_pnl": 1.0620352477460915,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 887.6246152541135,
+    "turnover_l2_squared": 248.35116051116444,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3178644424523847
+  },
+  {
+   "eval_seed": 1000080,
+   "candidate": {
+    "pnl": 0.26223806805443667,
+    "gross_pnl": 0.26223806805443667,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 295.7270227371482,
+    "turnover_l2_squared": 28.608840627623824,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0619675340442951,
+    "gross_pnl": 1.0619675340442951,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 901.1061184125138,
+    "turnover_l2_squared": 255.53995976779433,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32818223813431985
+  },
+  {
+   "eval_seed": 1000081,
+   "candidate": {
+    "pnl": 0.7670620845867526,
+    "gross_pnl": 0.7670620845867526,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 282.5099538791692,
+    "turnover_l2_squared": 26.305376079686006,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9629442075940203,
+    "gross_pnl": 0.9629442075940203,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 902.9276144462565,
+    "turnover_l2_squared": 254.1716118429036,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31288217278903985
+  },
+  {
+   "eval_seed": 1000082,
+   "candidate": {
+    "pnl": 0.0031240651951695286,
+    "gross_pnl": 0.0031240651951695286,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 300.34213512344286,
+    "turnover_l2_squared": 29.295345537892274,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.280153059280543,
+    "gross_pnl": 1.280153059280543,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 896.1443816071551,
+    "turnover_l2_squared": 254.03272916002427,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.33514926979155524
+  },
+  {
+   "eval_seed": 1000083,
+   "candidate": {
+    "pnl": 0.3920239674401252,
+    "gross_pnl": 0.3920239674401252,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 279.88404192752205,
+    "turnover_l2_squared": 25.440938552954492,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9864435409876097,
+    "gross_pnl": 0.9864435409876097,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 879.861209397015,
+    "turnover_l2_squared": 241.56213573981137,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3181002173278348
+  },
+  {
+   "eval_seed": 1000084,
+   "candidate": {
+    "pnl": 0.2204604805739948,
+    "gross_pnl": 0.2204604805739948,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 283.77868815138936,
+    "turnover_l2_squared": 26.71609802982761,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.5695714458286097,
+    "gross_pnl": 0.5695714458286097,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 909.9868742497638,
+    "turnover_l2_squared": 258.16641416689276,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.31184921033652263
+  },
+  {
+   "eval_seed": 1000085,
+   "candidate": {
+    "pnl": 0.9255757589143738,
+    "gross_pnl": 0.9255757589143738,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 293.3553927815519,
+    "turnover_l2_squared": 27.874851706568595,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.488340058755243,
+    "gross_pnl": 1.488340058755243,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 911.0698787706206,
+    "turnover_l2_squared": 263.0423014688563,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3219900027618077
+  },
+  {
+   "eval_seed": 1000086,
+   "candidate": {
+    "pnl": 0.3849357003479682,
+    "gross_pnl": 0.3849357003479682,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 291.6055849903496,
+    "turnover_l2_squared": 27.635950882176274,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.085635159596205,
+    "gross_pnl": 1.085635159596205,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 898.6948847406893,
+    "turnover_l2_squared": 255.08632479199056,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.324476738369875
+  },
+  {
+   "eval_seed": 1000087,
+   "candidate": {
+    "pnl": -0.032911794652169035,
+    "gross_pnl": -0.032911794652169035,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.99157369160093,
+    "turnover_l2_squared": 27.163030738944023,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.9060152077946674,
+    "gross_pnl": 0.9060152077946674,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 883.1704604235128,
+    "turnover_l2_squared": 250.61043113216306,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3272206064874711
+  },
+  {
+   "eval_seed": 1000088,
+   "candidate": {
+    "pnl": -0.14272153244075783,
+    "gross_pnl": -0.14272153244075783,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 298.32059219654184,
+    "turnover_l2_squared": 29.243504605030996,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5737614404928841,
+    "gross_pnl": 1.5737614404928841,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 889.1331920964876,
+    "turnover_l2_squared": 249.6578099229557,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.335518451957835
+  },
+  {
+   "eval_seed": 1000089,
+   "candidate": {
+    "pnl": 0.6634556683808018,
+    "gross_pnl": 0.6634556683808018,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 294.94944720494095,
+    "turnover_l2_squared": 28.719798139582586,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2987589548584846,
+    "gross_pnl": 1.2987589548584846,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 887.0280659455602,
+    "turnover_l2_squared": 248.61219816470597,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.33251422196041647
+  },
+  {
+   "eval_seed": 1000090,
+   "candidate": {
+    "pnl": 1.295034691499389,
+    "gross_pnl": 1.295034691499389,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 296.24177106050774,
+    "turnover_l2_squared": 29.12309570842715,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.2701704008794235,
+    "gross_pnl": 1.2701704008794235,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 910.8512859147158,
+    "turnover_l2_squared": 261.5773082850584,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3252361561558417
+  },
+  {
+   "eval_seed": 1000091,
+   "candidate": {
+    "pnl": 0.3231608897893615,
+    "gross_pnl": 0.3231608897893615,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 275.0600277429912,
+    "turnover_l2_squared": 24.748331976967822,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0403853046773524,
+    "gross_pnl": 1.0403853046773524,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 878.3767492272491,
+    "turnover_l2_squared": 243.58399505955072,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3131458431532653
+  },
+  {
+   "eval_seed": 1000092,
+   "candidate": {
+    "pnl": 0.6504744216380045,
+    "gross_pnl": 0.6504744216380045,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.20564827742055,
+    "turnover_l2_squared": 27.06189608299575,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5481627274512488,
+    "gross_pnl": 1.5481627274512488,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 884.7620696478116,
+    "turnover_l2_squared": 247.92250506140036,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3246134278696482
+  },
+  {
+   "eval_seed": 1000093,
+   "candidate": {
+    "pnl": -0.12443551645034837,
+    "gross_pnl": -0.12443551645034837,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.5879823539872,
+    "turnover_l2_squared": 27.32725699099538,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.0991778809787998,
+    "gross_pnl": 1.0991778809787998,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 898.1527578932437,
+    "turnover_l2_squared": 253.17381180962442,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3201994090944722
+  },
+  {
+   "eval_seed": 1000094,
+   "candidate": {
+    "pnl": 0.36194181324948593,
+    "gross_pnl": 0.36194181324948593,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 286.93181017483585,
+    "turnover_l2_squared": 27.072444289232326,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.031515259910163,
+    "gross_pnl": 1.031515259910163,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 908.8237153980881,
+    "turnover_l2_squared": 257.3119824454233,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3157177847732025
+  },
+  {
+   "eval_seed": 1000095,
+   "candidate": {
+    "pnl": 1.2842235899220156,
+    "gross_pnl": 1.2842235899220156,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 287.6710350374924,
+    "turnover_l2_squared": 26.679680857946,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.461088789494406,
+    "gross_pnl": 1.461088789494406,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 892.6461898955677,
+    "turnover_l2_squared": 252.33289306426133,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.32226770056694864
+  },
+  {
+   "eval_seed": 1000096,
+   "candidate": {
+    "pnl": 1.0527024344972604,
+    "gross_pnl": 1.0527024344972604,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.361057237722,
+    "turnover_l2_squared": 27.09721653026967,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.7853842950339183,
+    "gross_pnl": 1.7853842950339183,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 904.9701803575153,
+    "turnover_l2_squared": 256.73776360090625,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.318641501672246
+  },
+  {
+   "eval_seed": 1000097,
+   "candidate": {
+    "pnl": -0.4342410798073745,
+    "gross_pnl": -0.4342410798073745,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.7636989466846,
+    "turnover_l2_squared": 27.735077805392493,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.1748702159742561,
+    "gross_pnl": 1.1748702159742561,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 886.9554821959828,
+    "turnover_l2_squared": 247.21955737535785,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3255672970550274
+  },
+  {
+   "eval_seed": 1000098,
+   "candidate": {
+    "pnl": 0.4358482427767322,
+    "gross_pnl": 0.4358482427767322,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 296.55291208880953,
+    "turnover_l2_squared": 28.768762516300093,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 0.8267742283943914,
+    "gross_pnl": 0.8267742283943914,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 884.9012447612768,
+    "turnover_l2_squared": 248.3012580088127,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.3351254321817705
+  },
+  {
+   "eval_seed": 1000099,
+   "candidate": {
+    "pnl": 1.4119078842302104,
+    "gross_pnl": 1.4119078842302104,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 288.2900856519118,
+    "turnover_l2_squared": 27.080304130969363,
+    "n_scored_actions": 999
+   },
+   "reference": {
+    "pnl": 1.5153871696220258,
+    "gross_pnl": 1.5153871696220258,
+    "quadratic_cost": 0.0,
+    "turnover_l1": 904.5982242025784,
+    "turnover_l2_squared": 254.38973662003275,
+    "n_scored_actions": 999
+   },
+   "flat_anchor_pnl": 0.0,
+   "turnover_ratio": 0.318694065430037
+  }
+ ]
+}

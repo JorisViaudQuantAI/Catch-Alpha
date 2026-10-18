@@ -1,0 +1,9 @@
+# figure: F5 cash-and-carry net return vs fee per leg (train+valid)
+# source: catch_alpha.realdata.study.fee_sensitivity; floats copied with repr
+fee_bps,label,run_dir,full_window_sum_funding_term,full_window_sum_basis_term,full_window_sum_cost,full_window_sum_total,n_folds_mean_ci_lb_gt_zero
+0.0,none,cash_and_carry_v3_cost0bps,0.4914099075311501,-0.023195725120258567,0.0,0.4682141824108916,5
+1.0,taker,cash_and_carry_v3_cost1bps,0.4914099075311501,-0.023195725120258567,0.1463371645021645,0.321877017908727,4
+2.0,maker,cash_and_carry_v3_maker2bps,0.4914099075311501,-0.023195725120258567,0.292674329004329,0.17553985340656253,1
+3.0,taker,cash_and_carry_v3_cost3bps,0.4914099075311501,-0.023195725120258567,0.4390114935064935,0.029202688904398005,1
+5.0,taker,cash_and_carry_v3,0.4914099075311501,-0.023195725120258567,0.7316858225108225,-0.263471640099931,1
+10.0,taker,cash_and_carry_v3_cost10bps,0.4914099075311501,-0.023195725120258567,1.463371645021645,-0.9951574626107534,1

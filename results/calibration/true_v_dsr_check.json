@@ -1,0 +1,13 @@
+{
+  "v_true_cross_trial": 0.00046476563008946537,
+  "v_proxy_mean_sigma_sr_sq": 0.0005560031193823526,
+  "sr0_per_period_true_v": 0.059620335938528,
+  "sr0_per_period_proxy_mean": 0.06521027487386954,
+  "dsr_pass_proxy": 0,
+  "dsr_pass_true_v": 0,
+  "dsr_true_v_max": 0.3702852396416425,
+  "dsr_worked_example": {
+    "N=3": 0.9924512104883572,
+    "N=347": 0.6337742823778452
+  }
+}

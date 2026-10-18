@@ -1,0 +1,11 @@
+{
+  "n_weekly_returns": 276,
+  "n_required": 323,
+  "mean_weekly_net": 0.005643891888501985,
+  "mean_ci_95": [
+    6.361890860494668e-05,
+    0.013154782486258
+  ],
+  "gate_status": "INSUFFICIENT_DATA",
+  "gate_all_pass": false
+}
